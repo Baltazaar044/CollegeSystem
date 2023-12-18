@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* {
+   margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}  */
+
+nav{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #ffbd33;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover{
+  color: #111;
+  background:#6f42c1;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+
+  nav ul li a:hover{
+    background: none;
+    color: black;
+  }
+
+  nav ul{
+    z-index: 2;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #335eea;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+}
+ 
+ form {
+    width: 80%;
+    height:250px;
+    margin-bottom: 70px;
+    margin-left: 50px;
+    padding: 40px;
+    /* border-style: dotted; */
+  }
+  input {
+    margin: 10px 0;
+    width: 430px;
+    background-color: #ffbd33;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+  }
+  button {
+    margin-left: 130px;
+    text-decoration: none;
+    background-color: #ffbd33;
+    color: #ffffff;
+    padding: 10px 70px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+  }
+
+ button:hover{
+    text-decoration: none;
+    background-color: #ffbd33;
+    color: #010101;
+    padding: 10px 90px;
+    border: none;
+    outline: 1px solid #010101;
+  } 
+  table {
+    width: 80% !important;
+    border-collapse: collapse;
+    margin: 1.5rem auto !important;
+    font-size: 1.1em !important;
+  }
+  /* width: 120% !important;
+      margin: 1.5rem auto !important;
+      font-size: 1.1em !important; */
+  th,
+  td {
+    height: 50px;
+    vertical-align: center;
+    border: 1px solid black;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #fcfcfc;
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    width: 600px;
+    height: 260px;
+    background-color: #ffffff;
+    padding: 10px 30px 100px;
+    margin-bottom: 100px;
+  }
+  .card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    
+  }
+
+  .card h4{
+    margin: 10px 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: 20px;
+  font-weight: 900;
+  color: #2e2e2e;
+  }
+  
+
+  
+  

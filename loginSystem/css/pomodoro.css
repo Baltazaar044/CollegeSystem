@@ -1,0 +1,36 @@
+body{
+	font-family:'PT Mono';
+	background-color:#003133;
+	color:white;
+  }
+  
+  .timer-face{
+	border-style:solid;
+	border-radius:50%;
+	width: 400px;
+	height: 400px;
+	background-color:#009973;
+	padding-top:50px;
+	margin-top:50px;
+	float:none;
+	margin:auto;
+	display:block;
+	font-size:40px
+  }
+  .btn{
+	background-color:transparent;
+	font-size:30px;
+	margin-bottom:15px;
+  }
+  .btn:hover{
+	color:white;
+  }
+  
+  #session-time{
+	font-size:30px;
+  }
+  
+  #break-time{
+	font-size:30px;
+  }
+  
